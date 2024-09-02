@@ -1,0 +1,6 @@
+.home{
+    background-color: #000;
+    @media(max-width: 800px){
+        background-color: green($color: #000000);
+    }
+}
