@@ -1,27 +1,24 @@
-.about{
+.about {
     padding-top: 95px;
     padding-bottom: 105px;
 }
-
-.about__container{
+.about__container {
     @include flex(space-between, center);
 }
-
-.about__text{
+.about__text {
     width: 50%;
     max-width: 600px;
     text-align: center;
 }
-
-.about__img{
+.about__img {
     width: 50%;
     max-width: 500px;
     position: relative;
-    .circle{
+    .circle {
         right: 0;
         transform: translate(40%, -50%);
     }
-    img{
+    img {
         @include img;
     }
 }

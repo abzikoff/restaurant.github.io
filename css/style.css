@@ -304,6 +304,76 @@ section p {
   border-radius: 5px;
 }
 
+.order {
+  padding: 100px 0 45px;
+}
+
+.order__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order__text {
+  width: 50%;
+  max-width: 565px;
+  text-align: center;
+}
+
+.order-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.order-form input {
+  width: calc(50% - 5px);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background: #e5e5e5;
+  border: 1px solid transparent;
+  outline: none;
+  height: 60px;
+  padding: 0 20px;
+  font-size: 14px;
+}
+.order-form input::placeholer {
+  color: rgba(51, 51, 51, 0.5);
+}
+.order-form input:focus {
+  border: 1px solid #e8c300;
+}
+.order-form .order__select {
+  width: calc(50% - 5px);
+  margin-bottom: 10px;
+  position: relative;
+}
+.order-form .order__select::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(../img/select-arrow.svg) center no-repeat;
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 10px);
+  pointer-events: none;
+}
+.order-form .order__select select {
+  width: 100%;
+  background: #e5e5e5;
+  border: 1px solid transparent;
+  height: 60px;
+  padding: 0 20px;
+  font-size: 14px;
+  outline: none;
+  border-radius: 5px;
+  appearance: none;
+}
+.order-form .order__select select:not(:valid) {
+  color: rgba(51, 51, 51, 0.5);
+}
+
 .swiper-container {
   margin-left: auto;
   margin-right: auto;
